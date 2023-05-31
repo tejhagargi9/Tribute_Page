@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+    <title>Tribute Page</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        font-family: 'Nunito Sans', sans-serif;
+        background-image: linear-gradient(to bottom right, #649173, #DBD5A4);
+    }
+    /* header{
+        position: sticky;
+    } */
+    ul li{
+        list-style: none;
+        margin-left: 15rem;
+        padding: 0;
+    }
+    ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 0;
+        transition: color 0.5s;
+    }
+    ul li a:hover{
+        color: black;
+    }
+    ul {
+        display: flex;
+        margin-left: 30rem;
+    }
+    .navbar{
+        display: flex;
+        background-color: transparent;
+        box-shadow: 0px 0px 20px;
+        /* position: sticky;  */
+   }
+    .navbar p{
+        margin-left: 25px;
+        color: white;
+        padding: 0;
+        cursor: pointer;
+    }
+    .photo img{
+        width: 15cm;
+        margin: 20px 10px;
+        border-radius: 1rem;
+        box-shadow: 10px 10px 20px black,
+         -10px -10px 40px black;
+    }
+    .name #name{
+        text-align: center;
+        font-size: 70px;
+        margin: 0;
+        margin-top: 1.5rem;
+        font-weight: 400;
+        font-family: 'Raleway', sans-serif;
+    }
+    .name p{
+        text-align: center;
+        font-size: 20px;
+        margin: 0;
+    }
+    .story #storyquestion{
+        margin-top: 30px;
+        margin-left: 3rem;
+        font-size: 18px;
+
+    }
+    .storybox P{
+        text-align: center;
+        font-size: 19px;
+        padding: 10px;
+        margin: 40px;
+        border-radius: 15px;
+        font-family: 'Poppins', sans-serif;
+        box-shadow: 10px 2px 22px grey;
+        background-image: url(images/3079057.jpg);
+        background-size: cover;
+        color: white;
+        transition: transform 0.8s, opacity 0.5s;
+    }
+    .storybox p:hover{
+        transform: perspective(300px) translate3d(0px ,0px, 15px);
+        opacity: 0.8;
+        color: white;
+      
+    }
+     #records_list{
+        display: inline;
+        margin: 0; 
+   }
+    #records_list li{
+        list-style: circle;
+        margin-left:3rem ;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 35px;
+    }
+    .records p{
+       margin-top: 3rem;
+       margin-left: 30px;
+       font-size: 19px;
+    }
+    .fitness p{
+        margin-top: 3rem;
+       margin-left: 30px;
+       font-size: 19px;
+    }
+    .fitnessStory p{
+        font-weight: bold;
+        padding: 20px;
+        margin: 0;
+        /* border: 1px solid black; */
+        border-radius: 15px;
+        margin: 0px 2.2rem;
+        box-shadow: 10px 2px 22px grey;
+        transition: transform 0.5s;
+    }
+    .fitnessStory p:hover{
+        transform: perspective(300px) translate3d(0px ,0px, 10px);
+    }
+    .manyframes p{
+        margin-top: 3rem;
+       margin-left: 30px;
+       font-size: 19px;
+    }
+    .boxes1{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    .divboxes{
+        /* margin: 5px 60px; */
+        /* border: 2px solid red; */
+        border-radius: 15px;
+        width: 12.3cm;
+        height:7cm;
+        margin-bottom: 2rem;
+        display:flex;
+        justify-content: center;
+        /* align-items: center; */
+        font-size: 40px;
+        color: transparent;
+        transition: color 0.3s, transform 0.3s; 
+        box-shadow: 1px 2px 20px grey, -1px -2px 40px grey;   
+    }
+    .divboxes:hover{
+        color: white;
+        transform: perspective(300px) translate3d(0px, 0px, 20px);
+    }
+    .boxes2{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    #box1{
+        background: url(images/3079007.jpg);
+        background-size: cover;
+    }
+    #box2{
+        background: url(images/3079057.jpg);
+        background-size: cover;
+    }
+    #box3{
+        background: url(images/3079074.jpg);
+        background-size: cover;
+    }
+    #box4{
+        background: url(images/5765789.jpg);
+        background-size: cover;
+    }
+    #box5{
+        background: url(images/6512876.jpg);
+        background-size: cover;
+    }
+    #box6{
+        background: url(images/6512913.jpg);
+        background-size: cover;
+    }
+    .footer{
+        /* border: 2px solid red; */
+        height: 30px;
+        /* width: 100%; */
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(56, 56, 56);
+        color: whitesmoke;
+        align-items: center;
+    }
+
+</style>
+<body>
+    <header>
+    <div class="navbar">
+        <p>TRIBUTE PAGE</p>
+        <ul>
+            
+            <li id="firstli"><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">BIO</a></li>
+        </ul>
+    </div>
+</header>
+<main>
+    <section id="1">
+   <div class="name">
+    <p id="name">Virat Kohli</p>
+    <p>Master of Modern Cricket</p>
+   </div>
+</section>
+<section id="2">
+   <div class="story">
+    <p id="storyquestion"> <u> How Great Journey of <i> Virat Kohli Begun </u> </i> </p>
+    <div class="storybox">
+        <p>The great journey of Virat Kohli began when he first burst onto the international cricket scene. Born on November 5, 1988, in Delhi, India, Kohli showed immense talent and passion for the sport from a young age. <br>
+
+            Kohli's cricketing journey started at the junior level when he represented the Delhi Under-15 team. He quickly rose through the ranks and made his debut for the Indian Under-19 team in 2006. He played a crucial role in leading the team to victory in the Under-19 Cricket World Cup held in Malaysia in 2008. His performances in the tournament caught the attention of the cricketing fraternity, and he was soon hailed as a future star of Indian cricket. <br>
+            
+            In the same year, Kohli made his international debut for the Indian cricket team in an ODI against Sri Lanka. However, it was in 2010 that he truly announced his arrival on the international stage. Kohli showcased his incredible talent and ability to chase down targets under pressure during the Asia Cup, where he scored back-to-back centuries against Pakistan and Bangladesh. He continued his excellent form and soon became a permanent fixture in the Indian team across all formats. <br>
+            
+            Over the years, Kohli's batting prowess and consistency reached unprecedented heights. He has an extraordinary record of scoring centuries across formats and holds numerous records, including being the fastest player to score 8,000, 9,000, 10,000, and 11,000 runs in One Day Internationals (ODIs). He has also been a prolific run-scorer in Test cricket and became the first player to score double centuries in four consecutive Test series. <br>
+            
+            Kohli was appointed as the captain of the Indian Test team in 2014 and took over the limited-overs captaincy in 2017. Under his leadership, the Indian team achieved several notable victories, including their first-ever Test series win in Australia during the 2018-2019 season. Kohli's aggressive and passionate style of play, combined with his exceptional batting skills, have made him one of the most respected and influential cricketers in the world. <br>
+            
+            Beyond his individual achievements, Kohli has played a significant role in shaping the Indian cricket team's culture and fitness standards. He has emphasized the importance of physical fitness, discipline, and hard work, setting a great example for his teammates.
+             <br>
+            Virat Kohli's journey is a testament to his unwavering dedication, immense talent, and remarkable consistency in the sport. His impact on Indian cricket has been immense, and he continues to be a role model for aspiring cricketers around the world.</p>
+    </div>
+   </div>
+</section>
+<section id="3">
+    <div class="records">
+        <p> <u> Records Set By <i> Virat Kohli </i> </u> </p>
+        <ul id="records_list">
+            <li>Fastest player to score 8,000, 9,000, 10,000, and 11,000 runs in One Day Internationals (ODIs).</li>
+            <li>Fastest player to score 20 centuries in ODIs.</li>
+            <li>Fastest player to score 30 centuries in ODIs.</li>
+            <li>Fastest player to score 8,000, 9,000, 10,000, and 11,000 runs in Test matches.</li>
+            <li>Most double centuries (scores of 200 or more) as a captain in Test matches.</li>
+            <li>Most runs by a captain in a single edition of the Indian Premier League (IPL).</li>
+            <li>Fastest player to score 1,000 runs in Twenty20 International (T20I) cricket.</li>
+            <li>Fastest player to reach 10,000 runs in international cricket (combined across all formats).</li>
+            <li>Most centuries (100 or more) as a captain in ODIs.</li>
+            <li>Most runs in a single edition of the IPL.</li>
+        </ul>
+    </div>    
+</section>
+<section id="4">
+    <div class="fitness">
+        <p> <u> Fitness of <i> Virat Kohli </i></u></p>
+        <div class="fitnessStory">
+           <p> Virat Kohli has always been vocal about the importance of fitness in his career and has attributed a significant part of his success to his fitness regime. He is known for his exceptional discipline and dedication towards maintaining a high level of physical fitness. <br>
+
+Kohli has often emphasized the significance of fitness in improving his performance on the cricket field. He believes that being fit allows him to be agile, quick, and mentally sharp during matches. He has mentioned that his fitness routine helps him stay focused, make better decisions, and endure the physical demands of the game. <br>
+
+Kohli follows a strict training regimen that includes a combination of strength training, conditioning exercises, cardio workouts, and a balanced diet. He has also adopted a disciplined lifestyle that includes sufficient rest and recovery to ensure his body is in optimal condition. <br>
+
+Additionally, Kohli is an advocate for a healthy lifestyle and has spoken about the importance of maintaining a balanced diet and avoiding unhealthy habits such as smoking and excessive drinking. <br>
+
+Overall, Virat Kohli considers fitness as an integral part of his cricketing journey and believes that it plays a crucial role in achieving consistent performance and longevity in the sport. </p>
+        </div>
+    </div>
+
+</section>
+<section id="5">
+    <div class="manyframes">
+        <p>  <u>Random frames of <i>Virat Kohli</i> </u></p>
+    </div>
+    <div class="boxes1">
+        <div class="divboxes" id="box1">T20 Powerhouse</div>
+        <div class="divboxes" id="box2">Businessman</div>
+        <div class="divboxes" id="box3">Eagle Eye</div>
+    </div>
+    <div class="boxes2">
+        <div class="divboxes" id="box4">Best of Best</div>
+        <div class="divboxes" id="box5">Superman Fielder</div>
+        <div class="divboxes" id="box6">74, 100s</div>
+    </div>
+
+</section>
+
+</main>
+<footer>
+    <div class="footer">
+        @virat_kohli
+    </div>    
+</footer>
+    
+    
+
+</body>
+</html>
